@@ -165,6 +165,7 @@ class _ChatUITextFieldState extends State<ChatUITextField> {
               else
                 Expanded(
                   child: TextField(
+                    autofocus: true,
                     focusNode: widget.focusNode,
                     controller: widget.textEditingController,
                     style: textFieldConfig?.textStyle ??
