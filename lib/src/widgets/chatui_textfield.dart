@@ -187,7 +187,7 @@ class _ChatUITextFieldState extends State<ChatUITextField> {
                 builder: (_, inputTextValue, child) {
                   if (inputTextValue.isNotEmpty) {
                     return IconButton(
-                      color: sendMessageConfig?.defaultSendButtonColor ?? Colors.green,
+                      color: Colors.pink,//sendMessageConfig?.defaultSendButtonColor ?? Colors.green,
                       onPressed: () {
                         widget.onPressed();
                         _inputText.value = '';
