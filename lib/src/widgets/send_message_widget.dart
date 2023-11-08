@@ -309,7 +309,7 @@ class SendMessageWidgetState extends State<SendMessageWidget> {
         voiceMessageDuration: message.voiceMessageDuration,
       );
     }
-    FocusScope.of(context).requestFocus(_focusNode);
+    // FocusScope.of(context).requestFocus(_focusNode);
     if (widget.onReplyCallback != null) widget.onReplyCallback!(replyMessage);
   }
 
