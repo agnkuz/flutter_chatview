@@ -126,7 +126,7 @@ class SendMessageWidgetState extends State<SendMessageWidget> {
                       alignment: Alignment.bottomCenter,
                       children: [
                         GestureDetector(
-                          onTap: () => _focusNode.unfocus(),
+                          onTap: () => FocusScope.of(context).unfocus(),
                           child: ValueListenableBuilder<ReplyMessage>(
                             builder: (_, state, child) {
                               if (state.message.isNotEmpty) {
